@@ -1,8 +1,8 @@
 SELECT 
 	departments.id AS department_id, 
-	SUM(
+	MAX(
 		employees.salary
-	) AS employee_count
+	) AS max_salary
 FROM departments
 INNER JOIN employees 
 	ON 

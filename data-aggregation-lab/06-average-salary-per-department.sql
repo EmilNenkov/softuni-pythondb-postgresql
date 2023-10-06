@@ -1,8 +1,8 @@
 SELECT 
 	departments.id AS department_id, 
-	MIN(
+	AVG(
 		employees.salary
-	) AS employee_count
+	) AS avg_salary
 FROM departments
 INNER JOIN employees 
 	ON 

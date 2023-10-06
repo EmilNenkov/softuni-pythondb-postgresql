@@ -1,8 +1,8 @@
 SELECT 
 	departments.id AS department_id, 
-	MAX(
+	MIN(
 		employees.salary
-	) AS employee_count
+	) AS min_salary
 FROM departments
 INNER JOIN employees 
 	ON 

@@ -1,8 +1,8 @@
 SELECT 
 	departments.id AS department_id, 
-	AVG(
+	SUM(
 		employees.salary
-	) AS employee_count
+	) AS total_salaries
 FROM departments
 INNER JOIN employees 
 	ON 
